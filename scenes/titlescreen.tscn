@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw0pulfu6lc72"]
+
+[ext_resource type="Script" uid="uid://d2hicrw4eb3jc" path="res://scripts/titlescreen.gd" id="1_3jj3l"]
+[ext_resource type="Texture2D" uid="uid://bn00leocuaj4m" path="res://images/anime_bg.jpg" id="1_6d6rd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6d6rd"]
+texture = ExtResource("1_6d6rd")
+
+[node name="titlescreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3jj3l")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.581033, 0.58103293, 0.5810329, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6d6rd")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.0
+offset_top = -210.0
+offset_right = 305.0
+offset_bottom = -141.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "[user]'s Journey to School"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="playButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -35.0
+offset_right = 110.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="quitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = 51.0
+offset_right = 110.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[connection signal="pressed" from="playButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="quitButton" to="." method="_on_quit_button_pressed"]
