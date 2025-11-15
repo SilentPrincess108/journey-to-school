@@ -3,11 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://hv2jffssluh2" path="res://icon.svg" id="1_errlg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_errlg"]
-size = Vector2(122, 166)
+size = Vector2(127, 127)
 
 [node name="Sprite2D" type="Sprite2D"]
 texture = ExtResource("1_errlg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4, 15)
+position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_errlg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
