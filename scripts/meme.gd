@@ -1,9 +1,13 @@
 extends Area2D
 
+var memes = ["Italian...", "6*"]
+var ranChoice
+@onready var sprite: AnimatedSprite2D = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	ranChoice = memes.pick_random()
+	sprite.play(ranChoice)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
