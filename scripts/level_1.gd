@@ -17,6 +17,6 @@ func _on_portal_body_entered(body: CharacterBody2D) -> void:
 	get_tree().change_scene_to_file("res://scenes/endscreen.tscn")
 	
 	
-	if AudioStreamPlayer2D.playing == false:
-		$AudioStreamPlayer2D.play()
-		pass
+#	if AudioStreamPlayer2D.playing == false:
+	#	$AudioStreamPlayer2D.play()
+	#	pass
