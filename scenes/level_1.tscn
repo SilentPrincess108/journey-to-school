@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://ikft7jtmhqyb"]
+[gd_scene load_steps=13 format=3 uid="uid://ikft7jtmhqyb"]
 
 [ext_resource type="Texture2D" uid="uid://dapledpvpa0gr" path="res://assets/sprites/environment-tileset.png" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://bckdvqt3cm4j2" path="res://assets/sprites/bg.png" id="1_bswci"]
 [ext_resource type="Script" uid="uid://dm0ikst1q155r" path="res://scripts/level_1.gd" id="1_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://b6hbs0skdkpee" path="res://assets/sprites/houses.png" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
+[ext_resource type="PackedScene" uid="uid://dece4envv1cir" path="res://bird.tscn" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
@@ -71,47 +72,17 @@ shape = SubResource("WorldBoundaryShape2D_4nkto")
 
 [node name="birbs" type="Node" parent="."]
 
-[node name="birb1" parent="birbs"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(600, 531)
+[node name="birb1" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(559, 539)
 scale = Vector2(1.5, 1.5)
-script = null
 
-[node name="birb2" parent="birbs"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(847.00006, 430)
+[node name="birb2" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(842.00006, 429.00003)
 scale = Vector2(1.5, 1.5)
-script = null
 
-[node name="birb3" parent="birbs"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(1224, 401)
+[node name="birb3" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(1242, 381.00003)
 scale = Vector2(1.5, 1.5)
-script = null
 
 [node name="food" type="Node" parent="."]
 
