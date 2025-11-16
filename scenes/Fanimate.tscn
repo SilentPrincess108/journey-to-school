@@ -235,6 +235,7 @@ animations = [{
 }]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(0, 2)
 sprite_frames = SubResource("SpriteFrames_hp75f")
 frame = 31
 frame_progress = 1.0

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq51vieum616w"]
+
+[ext_resource type="Texture2D" uid="uid://3mp2ixyj1qqf" path="res://assets/sprites/Cloud1.png" id="1_3u8ya"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dw7mk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2w1a"]
+size = Vector2(46, 19)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_dw7mk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.536743e-07, 2.3841858e-07)
+scale = Vector2(1.46875, 1.25)
+texture = ExtResource("1_3u8ya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -5.5)
+shape = SubResource("RectangleShape2D_t2w1a")

@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://dm0ikst1q155r" path="res://scripts/level_1.gd" id="1_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://b6hbs0skdkpee" path="res://assets/sprites/houses.png" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
-[ext_resource type="PackedScene" uid="uid://crb3q80baovo" path="res://bird.tscn" id="5_4nkto"]
+[ext_resource type="PackedScene" uid="uid://crb3q80baovo" path="res://scenes/bird.tscn" id="5_4nkto"]
 [ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
