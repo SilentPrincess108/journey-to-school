@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://bf1tv8uli2x5o"]
+[gd_scene load_steps=15 format=3 uid="uid://cupqwdiew07f4"]
 
 [ext_resource type="Script" uid="uid://chunydei0hibe" path="res://scenes/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://o3x2g3den3sq" path="res://images/standing.png" id="2_qhqgy"]
-[ext_resource type="Texture2D" uid="uid://baoptmiwjarxa" path="res://images/New Piskel.png" id="3_dqkch"]
+[ext_resource type="Texture2D" uid="uid://o3x2g3den3sq" path="res://standing.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://baoptmiwjarxa" path="res://New Piskel.png" id="3_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(16, 24)
@@ -95,3 +95,9 @@ sprite_frames = SubResource("SpriteFrames_f1ej7")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.04815646
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -11)
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_bottom = 700
