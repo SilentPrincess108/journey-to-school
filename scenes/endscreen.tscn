@@ -489,10 +489,32 @@ position = Vector2(941, 162)
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_ix86i")
 animation = &"pass"
-frame_progress = 0.753211
+frame_progress = 0.8775654
 
 [node name="baldi" type="AnimatedSprite2D" parent="."]
 position = Vector2(306, 368)
 scale = Vector2(16.578125, 17.796875)
 sprite_frames = SubResource("SpriteFrames_e51k4")
 animation = &"happy"
+
+[node name="energy" type="Label" parent="."]
+offset_left = 672.0
+offset_top = 289.0
+offset_right = 815.0
+offset_bottom = 344.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Energy:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="result" type="Label" parent="."]
+offset_left = 651.0
+offset_top = 85.0
+offset_right = 841.0
+offset_bottom = 195.0
+theme_override_colors/font_color = Color(0.81960785, 0.24705882, 0.1764706, 1)
+theme_override_font_sizes/font_size = 80
+text = "PASS"
+horizontal_alignment = 1
+vertical_alignment = 1
