@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://62bj4tusf5w5"]
 
-[ext_resource type="Texture2D" uid="uid://c4j8vxt3t4c8h" path="res://assets/sprites/A+.png" id="1_7q0oi"]
 [ext_resource type="Script" uid="uid://btl5ggndw4dwb" path="res://scripts/food.gd" id="1_xpi5f"]
 [ext_resource type="Texture2D" uid="uid://bbvripmtem2q7" path="res://assets/sprites/New Piskel (4).png" id="2_p8t0w"]
 [ext_resource type="Texture2D" uid="uid://dirnum1y1kqbs" path="res://assets/sprites/New Piskel (3).png" id="3_14bb5"]
-[ext_resource type="Texture2D" uid="uid://dhuqfcchn6pwf" path="res://assets/sprites/F.png" id="5_7b0y3"]
+[ext_resource type="Texture2D" uid="uid://b630mjguj7dbq" path="res://assets/sprites/New Piskel (1).png" id="4_p8t0w"]
+[ext_resource type="Texture2D" uid="uid://c3cmid41qjy7c" path="res://assets/sprites/New Piskel (2).png" id="5_14bb5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufjn6"]
 atlas = ExtResource("2_p8t0w")
@@ -14,12 +14,12 @@ region = Rect2(0, 0, 32, 64)
 atlas = ExtResource("3_14bb5")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_af40f"]
-atlas = ExtResource("1_7q0oi")
+[sub_resource type="AtlasTexture" id="AtlasTexture_7b0y3"]
+atlas = ExtResource("4_p8t0w")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dp1sw"]
-atlas = ExtResource("5_7b0y3")
+atlas = ExtResource("5_14bb5")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_370ap"]
@@ -42,7 +42,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_af40f")
+"texture": SubResource("AtlasTexture_7b0y3")
 }],
 "loop": true,
 "name": &"pizza",
@@ -65,7 +65,7 @@ script = ExtResource("1_xpi5f")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_370ap")
-animation = &"celcius"
+animation = &"toast"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_af40f")
