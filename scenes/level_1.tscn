@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ikft7jtmhqyb"]
+[gd_scene load_steps=15 format=3 uid="uid://ikft7jtmhqyb"]
 
 [ext_resource type="Texture2D" uid="uid://dapledpvpa0gr" path="res://assets/sprites/environment-tileset.png" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://bckdvqt3cm4j2" path="res://assets/sprites/bg.png" id="1_bswci"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://dece4envv1cir" path="res://bird.tscn" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
+[ext_resource type="PackedScene" uid="uid://cmws543gh51fk" path="res://scenes/cloud.tscn" id="8_15mv3"]
+[ext_resource type="PackedScene" uid="uid://b1pgy4shttg8r" path="res://scenes/Meme.tscn" id="9_e3sih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
@@ -77,29 +79,73 @@ position = Vector2(559, 539)
 scale = Vector2(1.5, 1.5)
 
 [node name="birb2" parent="birbs" instance=ExtResource("6_pa8r4")]
-position = Vector2(842.00006, 429.00003)
+position = Vector2(817, 470)
 scale = Vector2(1.5, 1.5)
 
 [node name="birb3" parent="birbs" instance=ExtResource("6_pa8r4")]
-position = Vector2(1242, 381.00003)
+position = Vector2(1179, 394.00003)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb4" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(1650, 537)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb5" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(1770, 215.00003)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb6" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(2099, 305)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb7" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(3251.0002, 413)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb8" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(2675, 491)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb9" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(2971, 542)
+scale = Vector2(1.5, 1.5)
+
+[node name="birb10" parent="birbs" instance=ExtResource("6_pa8r4")]
+position = Vector2(3010, 193)
 scale = Vector2(1.5, 1.5)
 
 [node name="food" type="Node" parent="."]
 
 [node name="food" parent="food" instance=ExtResource("7_pa8r4")]
-position = Vector2(395.00003, 613)
+position = Vector2(562, 486)
 scale = Vector2(1.5, 1.5)
 
 [node name="food2" parent="food" instance=ExtResource("7_pa8r4")]
-position = Vector2(840, 379)
+position = Vector2(824, 414)
 scale = Vector2(1.5, 1.5)
 
 [node name="food3" parent="food" instance=ExtResource("7_pa8r4")]
-position = Vector2(1225, 627)
+position = Vector2(1017, 621)
 scale = Vector2(1.5, 1.5)
 
 [node name="food4" parent="food" instance=ExtResource("7_pa8r4")]
-position = Vector2(1972, 627)
+position = Vector2(3251.0002, 355)
+scale = Vector2(1.5, 1.5)
+
+[node name="food5" parent="food" instance=ExtResource("7_pa8r4")]
+position = Vector2(2056, 98)
+scale = Vector2(1.5, 1.5)
+
+[node name="food6" parent="food" instance=ExtResource("7_pa8r4")]
+position = Vector2(1198, 150)
+scale = Vector2(1.5, 1.5)
+
+[node name="food7" parent="food" instance=ExtResource("7_pa8r4")]
+position = Vector2(2742, 260)
+scale = Vector2(1.5, 1.5)
+
+[node name="food8" parent="food" instance=ExtResource("7_pa8r4")]
+position = Vector2(1913.0001, 322)
 scale = Vector2(1.5, 1.5)
 
 [node name="UI" type="CanvasLayer" parent="."]
@@ -130,3 +176,75 @@ position = Vector2(3604, 607)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="portal"]
 position = Vector2(2, -28.5)
 shape = SubResource("RectangleShape2D_pa8r4")
+
+[node name="Cloud" type="Node2D" parent="."]
+
+[node name="Cloud 1" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(2059, 162)
+scale = Vector2(3, 3)
+
+[node name="Cloud 2" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(925.00006, 314)
+scale = Vector2(3, 3)
+
+[node name="Cloud 3" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(1391, 466)
+scale = Vector2(3, 3)
+
+[node name="Cloud 4" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(1470, 307)
+scale = Vector2(3, 3)
+
+[node name="Cloud 5" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(1908.0001, 423)
+scale = Vector2(3, 3)
+
+[node name="Cloud 6" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(1204.0001, 216)
+scale = Vector2(3, 3)
+
+[node name="Cloud 7" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(2369, 396)
+scale = Vector2(3, 3)
+
+[node name="Cloud 8" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(3288.0002, 102)
+scale = Vector2(3, 3)
+
+[node name="Cloud 9" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(2377, 179)
+scale = Vector2(3, 3)
+
+[node name="Cloud 10" parent="Cloud" instance=ExtResource("8_15mv3")]
+position = Vector2(2749, 338)
+scale = Vector2(3, 3)
+
+[node name="MEME" type="Node2D" parent="."]
+
+[node name="meme1" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(1050, 390)
+scale = Vector2(2, 2)
+
+[node name="meme2" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(1632, 339)
+scale = Vector2(2, 2)
+
+[node name="meme3" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(2230, 174)
+scale = Vector2(2, 2)
+
+[node name="meme4" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(2511, 510)
+scale = Vector2(2, 2)
+
+[node name="meme5" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(2156, 598)
+scale = Vector2(2, 2)
+
+[node name="meme6" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(3284, 31)
+scale = Vector2(2, 2)
+
+[node name="meme7" parent="MEME" instance=ExtResource("9_e3sih")]
+position = Vector2(279, 600)
+scale = Vector2(2, 2)
