@@ -489,7 +489,7 @@ position = Vector2(941, 162)
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_ix86i")
 animation = &"pass"
-frame_progress = 0.8887984
+frame_progress = 0.4406751
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(306, 368)
