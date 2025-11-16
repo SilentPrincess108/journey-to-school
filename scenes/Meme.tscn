@@ -33,7 +33,6 @@ script = ExtResource("1_r5w76")
 shape = SubResource("CircleShape2D_yeylf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_vcjou")
 animation = &"Italian..."
 
