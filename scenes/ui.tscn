@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://e25352k2q5q6"]
+[gd_scene format=3 uid="uid://e25352k2q5q6"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -18,14 +18,5 @@ offset_bottom = 23.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 15
 text = "Energy: "
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="timer" type="Label" parent="."]
-layout_mode = 1
-offset_right = 96.0
-offset_bottom = 35.0
-theme_override_font_sizes/font_size = 15
-text = "Time: "
 horizontal_alignment = 1
 vertical_alignment = 1
