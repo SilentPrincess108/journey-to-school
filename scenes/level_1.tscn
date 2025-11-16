@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://dece4envv1cir" path="res://bird.tscn" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
-[ext_resource type="PackedScene" uid="uid://cmws543gh51fk" path="res://scenes/cloud.tscn" id="8_15mv3"]
-[ext_resource type="PackedScene" uid="uid://b1pgy4shttg8r" path="res://scenes/Meme.tscn" id="9_e3sih"]
+[ext_resource type="PackedScene" path="res://scenes/cloud.tscn" id="8_15mv3"]
+[ext_resource type="PackedScene" path="res://scenes/Meme.tscn" id="9_e3sih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
