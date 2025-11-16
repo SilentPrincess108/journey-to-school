@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://mhde3q616gg2"]
+[gd_scene load_steps=7 format=3 uid="uid://mhde3q616gg2"]
 
 [ext_resource type="Script" uid="uid://qs0jflyadct" path="res://scripts/meme.gd" id="1_r5w76"]
 [ext_resource type="Texture2D" uid="uid://bgk0cxsupg8cu" path="res://assets/sprites/New Piskel (5).png" id="1_rtqfm"]
 [ext_resource type="Texture2D" uid="uid://b6gj2hmvp28le" path="res://assets/sprites/New Piskel (7).png" id="2_r5w76"]
+[ext_resource type="AudioStream" uid="uid://rhwieohet46u" path="res://assets/sfx/vine-boom-sound-effect_chosic.com_.wav" id="4_yeylf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yeylf"]
 radius = 14.0
@@ -35,5 +36,8 @@ shape = SubResource("CircleShape2D_yeylf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vcjou")
 animation = &"Italian..."
+
+[node name="munch" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_yeylf")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

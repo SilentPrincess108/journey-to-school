@@ -71,7 +71,8 @@ animation = &"toast"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_af40f")
 
-[node name="munch" type="AudioStreamPlayer" parent="."]
+[node name="munch" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_14bb5")
+attenuation = 9.189588
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
