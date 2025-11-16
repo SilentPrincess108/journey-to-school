@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://ikft7jtmhqyb"]
+[gd_scene load_steps=10 format=3 uid="uid://ikft7jtmhqyb"]
 
 [ext_resource type="Texture2D" uid="uid://dapledpvpa0gr" path="res://assets/sprites/environment-tileset.png" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://bckdvqt3cm4j2" path="res://assets/sprites/bg.png" id="1_bswci"]
 [ext_resource type="Texture2D" uid="uid://b6hbs0skdkpee" path="res://assets/sprites/houses.png" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
+[ext_resource type="PackedScene" path="res://bird.tscn" id="5_4nkto"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
@@ -58,3 +59,11 @@ position = Vector2(3613, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_4nkto")
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_4nkto")]
+position = Vector2(622, 540)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("5_4nkto")]
+position = Vector2(842, 437)
+scale = Vector2(2, 2)
