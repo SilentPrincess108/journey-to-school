@@ -18,4 +18,4 @@ func _process(_delta: float) -> void:
 func _on_body_entered(body: CharacterBody2D) -> void:
 	Globals.energy += 5
 	self.queue_free()
-	munch.play()
+	$munch.play()
