@@ -3,7 +3,6 @@ extends Area2D
 var foods = ["toast", "pizza", "fries", "celcius"]
 var ranChoice
 @onready var sprite: AnimatedSprite2D = $Sprite2D
-@onready var munch: AudioStreamPlayer2D = $munch
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,7 +14,7 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: CharacterBody2D) -> void:
+func _on_body_entered(_body: CharacterBody2D) -> void:
 	Globals.energy += 5
+	get_node("/root/level1/food_sound").play()
 	self.queue_free()
-	$munch.play()
