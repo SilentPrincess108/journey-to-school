@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://ikft7jtmhqyb"]
+[gd_scene load_steps=12 format=3 uid="uid://ikft7jtmhqyb"]
 
 [ext_resource type="Texture2D" uid="uid://dapledpvpa0gr" path="res://assets/sprites/environment-tileset.png" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://bckdvqt3cm4j2" path="res://assets/sprites/bg.png" id="1_bswci"]
+[ext_resource type="Script" uid="uid://dm0ikst1q155r" path="res://scripts/level_1.gd" id="1_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://b6hbs0skdkpee" path="res://assets/sprites/houses.png" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
-[ext_resource type="PackedScene" path="res://bird.tscn" id="5_4nkto"]
+[ext_resource type="PackedScene" uid="uid://crb3q80baovo" path="res://bird.tscn" id="5_4nkto"]
+[ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
@@ -25,6 +27,11 @@ distance = 11.0
 normal = Vector2(-1, 0)
 
 [node name="level1" type="Node"]
+script = ExtResource("1_fcfvj")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1152, 0)
@@ -67,3 +74,21 @@ scale = Vector2(2, 2)
 [node name="StaticBody2D3" parent="." instance=ExtResource("5_4nkto")]
 position = Vector2(842, 437)
 scale = Vector2(2, 2)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="food" parent="Node" instance=ExtResource("7_pa8r4")]
+position = Vector2(395.00003, 613)
+scale = Vector2(1.5, 1.5)
+
+[node name="food2" parent="Node" instance=ExtResource("7_pa8r4")]
+position = Vector2(840, 379)
+scale = Vector2(1.5, 1.5)
+
+[node name="food3" parent="Node" instance=ExtResource("7_pa8r4")]
+position = Vector2(1225, 627)
+scale = Vector2(1.5, 1.5)
+
+[node name="food4" parent="Node" instance=ExtResource("7_pa8r4")]
+position = Vector2(1972, 627)
+scale = Vector2(1.5, 1.5)
