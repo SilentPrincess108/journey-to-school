@@ -347,7 +347,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_onavd")
 }],
-"loop": true,
+"loop": false,
 "name": &"fail",
 "speed": 10.0
 }, {
@@ -433,7 +433,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_emp51")
 }],
-"loop": true,
+"loop": false,
 "name": &"pass",
 "speed": 10.0
 }]
@@ -488,8 +488,7 @@ texture = ExtResource("2_7s65u")
 position = Vector2(390.25, 161.68002)
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_ix86i")
-animation = &"pass"
-frame_progress = 0.16717291
+animation = &"fail"
 
 [node name="baldi" type="AnimatedSprite2D" parent="."]
 position = Vector2(837, 362)
@@ -518,3 +517,12 @@ theme_override_font_sizes/font_size = 80
 text = "PASS"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="comment" type="Label" parent="."]
+offset_left = 109.0
+offset_top = 371.0
+offset_right = 475.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "You get good grade at school!  Your teacher is very happy! Congratulations!"
+autowrap_mode = 2
