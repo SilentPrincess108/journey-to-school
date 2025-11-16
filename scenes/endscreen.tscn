@@ -480,28 +480,28 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_cuen1")
 
 [node name="paper" type="Sprite2D" parent="."]
-position = Vector2(839.99994, 341.99994)
+position = Vector2(289.24988, 341.67996)
 scale = Vector2(5.6199994, 5.6199994)
 texture = ExtResource("2_7s65u")
 
 [node name="grade" type="AnimatedSprite2D" parent="."]
-position = Vector2(941, 162)
+position = Vector2(390.25, 161.68002)
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_ix86i")
 animation = &"pass"
-frame_progress = 0.8775654
+frame_progress = 0.16717291
 
 [node name="baldi" type="AnimatedSprite2D" parent="."]
-position = Vector2(306, 368)
+position = Vector2(837, 362)
 scale = Vector2(16.578125, 17.796875)
 sprite_frames = SubResource("SpriteFrames_e51k4")
 animation = &"happy"
 
 [node name="energy" type="Label" parent="."]
-offset_left = 672.0
-offset_top = 289.0
-offset_right = 815.0
-offset_bottom = 344.0
+offset_left = 121.25
+offset_top = 288.68002
+offset_right = 264.25
+offset_bottom = 343.68002
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Energy:"
@@ -509,10 +509,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="result" type="Label" parent="."]
-offset_left = 651.0
-offset_top = 85.0
-offset_right = 841.0
-offset_bottom = 195.0
+offset_left = 100.25
+offset_top = 84.68002
+offset_right = 290.25
+offset_bottom = 194.68002
 theme_override_colors/font_color = Color(0.81960785, 0.24705882, 0.1764706, 1)
 theme_override_font_sizes/font_size = 80
 text = "PASS"
