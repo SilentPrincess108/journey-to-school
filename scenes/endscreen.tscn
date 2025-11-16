@@ -526,3 +526,13 @@ offset_bottom = 499.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "You get good grade at school!  Your teacher is very happy! Congratulations!"
 autowrap_mode = 2
+
+[node name="quit" type="Button" parent="."]
+offset_left = 234.0
+offset_top = 473.0
+offset_right = 323.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 20
+text = "Quit"
+
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

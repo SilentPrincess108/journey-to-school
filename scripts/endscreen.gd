@@ -27,3 +27,11 @@ func _process(delta: float) -> void:
 		energy.text = "Energy: Low " + "(" + str(Globals.energy) + ")"
 		result.text = "FAIL"
 		comment.text = "Brainrot suck all your energy! You get bad grade at school and your teacher is very angry! BE CAREFUL TONIGHT!!!"
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
+
+
+func _on_title_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/titlescreen.tscn")
