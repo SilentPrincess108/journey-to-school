@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwd4bkkf2sa6v"
+path="res://.godot/imported/Munch (eating _ biting).mp3-fbb06b7085eb65e6d6a405e4dfbb9656.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Munch (eating _ biting).mp3"
+dest_files=["res://.godot/imported/Munch (eating _ biting).mp3-fbb06b7085eb65e6d6a405e4dfbb9656.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
