@@ -484,15 +484,15 @@ position = Vector2(839.99994, 341.99994)
 scale = Vector2(5.6199994, 5.6199994)
 texture = ExtResource("2_7s65u")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="grade" type="AnimatedSprite2D" parent="."]
 position = Vector2(941, 162)
 scale = Vector2(2.125, 2.125)
 sprite_frames = SubResource("SpriteFrames_ix86i")
 animation = &"pass"
-frame_progress = 0.4406751
+frame_progress = 0.753211
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="baldi" type="AnimatedSprite2D" parent="."]
 position = Vector2(306, 368)
 scale = Vector2(16.578125, 17.796875)
 sprite_frames = SubResource("SpriteFrames_e51k4")
-animation = &"angry"
+animation = &"happy"
