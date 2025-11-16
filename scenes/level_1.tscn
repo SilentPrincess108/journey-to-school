@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ikft7jtmhqyb"]
+[gd_scene load_steps=16 format=3 uid="uid://ikft7jtmhqyb"]
 
 [ext_resource type="Texture2D" uid="uid://dapledpvpa0gr" path="res://assets/sprites/environment-tileset.png" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://bckdvqt3cm4j2" path="res://assets/sprites/bg.png" id="1_bswci"]
@@ -7,8 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://cupqwdiew07f4" path="res://scenes/player.tscn" id="4_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://dece4envv1cir" path="res://bird.tscn" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://62bj4tusf5w5" path="res://scenes/food.tscn" id="7_pa8r4"]
-[ext_resource type="PackedScene" path="res://scenes/cloud.tscn" id="8_15mv3"]
+[ext_resource type="PackedScene" uid="uid://cmws543gh51fk" path="res://scenes/cloud.tscn" id="8_15mv3"]
 [ext_resource type="PackedScene" uid="uid://mhde3q616gg2" path="res://scenes/Meme.tscn" id="9_e3sih"]
+[ext_resource type="AudioStream" uid="uid://bkwdywqfv3o54" path="res://assets/sfx/Carefree(chosic.com).mp3" id="10_2y5yt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bswci"]
 texture = ExtResource("1_014kd")
@@ -248,5 +249,9 @@ scale = Vector2(2, 2)
 [node name="meme7" parent="MEME" instance=ExtResource("9_e3sih")]
 position = Vector2(279, 600)
 scale = Vector2(2, 2)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_2y5yt")
+autoplay = true
 
 [connection signal="body_entered" from="portal" to="." method="_on_portal_body_entered"]
