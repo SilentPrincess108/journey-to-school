@@ -100,5 +100,5 @@ frame_progress = 0.04815646
 position = Vector2(0, -11)
 zoom = Vector2(1.5, 1.5)
 limit_left = 0
-limit_right = 3700
+limit_right = 3600
 limit_bottom = 700
